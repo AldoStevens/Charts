@@ -41,6 +41,15 @@ namespace Charts
 
             
             Chart1.Chart = new PointChart { Entries = entries };
+            Chart2.Chart = new BarChart { Entries = entries };
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            string text = numEntry.Text;
+
+            numLabel.Text = text;
         }
     }
 }
